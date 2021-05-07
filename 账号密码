@@ -1,0 +1,33 @@
+<!D1OCTYPE html>
+<htmxsaxl lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>登陆密码</title>
+</head>
+
+<body>
+    <span>账号</span>
+    <input type="text" name="username"><br>
+    <span>密码</span>
+    <input type="password" name="password"><br>
+     <button onclick="has()"></button>
+    <input type="submit" value="登录">
+    <script type="text/javascript">
+    function has(){
+        var inp=document.getElementsByTagName("input")[1]
+        var inpType=inp.type 
+        if (inpType=="password"){
+            inp.type="text";
+        }
+        
+        else{
+            inp.type="password";
+        }
+
+    }
+    </script>
+</body>
+</html>
