@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>左侧导航条</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .left{
+            background-color: burlywood;
+            width: 130px;
+            height: 180px;
+            margin: 200px auto;
+
+        }
+        .left .item{
+            height: 30px;
+            line-height: 30px;
+            /* 字垂直居中即 height和line-height的大小相同即可 */
+            padding-left: 7px;
+            /* 不写宽度padding就不会溢出 */
+           
+        }
+        /* 鼠标悬浮变色 */
+        .item:hover{
+            background-color: cadetblue;
+        }
+        .item a{
+            text-decoration: none;
+            font-size: 16px;
+            color: chartreuse;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="left">    
+        <div class="item">
+            <a href="#">手机</a>
+        </div>
+
+        <div class="item">
+            <a href="#">裙子/</a>
+            <a href="#">裤子/</a>
+            <a href="#">袜子</a>
+        </div>
+
+        <div class="item">
+            <a href="#">苹果/</a>
+            <a href="#">西瓜</a>
+        </div>
+
+        <div class="item">
+            <a href="#">手机</a>
+        </div>
+
+        <div class="item">
+            <a href="#">vivo/</a>
+            <a href="#">oppo/</a>
+            <a href="#">mi</a>
+        </div>
+
+        <div class="item">
+            <a href="#">景点</a>
+        </div>
+    </nav>
+</body>
+</html>
