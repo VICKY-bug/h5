@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			ul{
+				list-style: none;/* 取消列表标记 */
+				height: 48px;
+				width: 800px;
+				background-color: rgb(1,32,79);
+				/* 上下的内边距0，左右的外边距平分 */
+				margin: 0 auto;
+				/* text-align: center; */
+			}
+			ul li{
+				float: left;
+				padding-left: 10px;
+				padding-right: 10px;
+				background-color: rgb(1,32,79);
+				color: white;
+				/* padding-top: 5px;
+				padding-bottom: 5px; */
+				height: 48px;
+				line-height: 48px;
+			}
+			ul li:hover{
+				background-color: #FF0000;
+			}
+			#box{
+				width: 100%;
+				height: 48px;
+				background-color: rgb(1,32,79);
+				/* clear: both; */
+				margin-top: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="box">
+			<!-- 页面结构搭建 -->
+			<ul>
+				<li>首页</li>
+				<li>国内</li>
+				<li>国际</li>
+				<li>军事</li>
+				<li>互联网</li>
+				<li>国际</li>
+				<li>军事</li>
+				<li>互联网</li>
+			</ul>
+		</div>
+	</body>
+</html>
