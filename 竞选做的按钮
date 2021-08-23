@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--第一个按钮-->
+<script LANGUAGE="JavaScript">
+function myFunction()
+{
+    alert("开始演讲啦~希望能够竞选成功！");
+    document.getElementById("o").style.display="block";
+}
+
+  
+function erFunction()
+{
+    alert("好评哦，不给我默默加分嘛！");
+    document.getElementById("q").style.display="block";
+    // document.getElementById("w").style.display="block";
+
+}
+
+</script>
+
+
+</head>
+<body>
+    <!--第一个-->
+<img src="img/1.gif" id="o" style="display: none;" width="150" height="150">
+<input type="button" onclick="myFunction()" value="1.go!go!go!"><br/><br/><br/><br/>
+
+
+<img src="img/4.jpg"id="q" style="display: none;" width="250" height="200">
+<!-- <img src="img/3.jpg" id="w" style="display: none;" width="150" height="150"> -->
+<input type="button" onclick="erFunction()" value="小按钮">（我不是第二个按钮哦，请先跳过我不要点！！）<br/><br/><br/>
+
+<!--第二个-->
+<p>点击第二个按钮，芜湖起飞！</p>
+<button onclick="maFunction()">2.点我点我不吃亏~</button><br/><br/>
+<p id="demo"></p><br/><br/>
+
+<!--第三个-->
+<p>点击第三个按钮，要有一颗包容的心！</p>
+<button onclick="sanFunction()">3.我坦白了！</button><br/><br/>
+<p id="de"></p><br/><br/>
+
+
+<!--第四个-->
+<p>点击第四个按钮，输入正确答案（只要填了，不点取消，所有都是正确答案哦），就保永远不秃哦！</p>
+<button onclick="siFunction()">4.对待创协我是认真的！！！</button><br/>
+<p id="d"></p>
+
+
+<script>
+    function maFunction(){
+        var x;
+        var r=confirm("了解一下我吧！"+"\n"+"顺便来看看我的一些优点。"+"\n"+"看不了吃亏看不了上当！");
+        if (r==true){
+            x=("1.做事理性，有规划有原则有准备，绝不临时匆忙。"+"<br>" +"2.执行力强，绝不拖沓。"+"<br>"+"3.做事细心，有始有终。会将相关的通知和表格进行收藏和截图，确保工作的准确性以及不遗漏工作。"+"<br>"+"4.敬业，认真负责，会及时与对接负责人进行沟通（有图为证）。"+"<br>"+"5.有一颗感恩的心，也能够及时反思自己工作及言行上的不足，讨厌抱怨。");
+            
+        }
+        else{
+            x="骚年，不能取消，不然会秃头的！！不过老衲还有一计，请重新来过，点击确定，发际线100年不后退哦！！";
+        }
+        document.getElementById("demo").innerHTML=x;
+    } 
+    
+    function sanFunction(){
+	var x;
+	var r=confirm("俗话说有容乃大!"+"\n"+"不能被一些不足蒙蔽了双眼！"+"\n"+"我会不断进步和改正的！");
+	if (r==true){
+		x="1.现场应激发挥能力差，有时容易紧张而出错"+"<br>"+"2.格局不够大，目光不够长远，会动脑子但创新力不强，主意不多。"+"<br>"+"3.易随波逐流，也有松懈的时候。";
+	}
+	else{
+		x="取消啦？我最棒，没有缺点！！！这样的我想和创协见证新的一个学期！（手动狗头）";
+	}
+	document.getElementById("de").innerHTML=x;
+}
+
+function siFunction(){
+	var x;
+	var person=prompt("学长/学姐是否愿意为我的大二和创协牵一条红线呢？");
+	if (person!=null && person!=""){
+	    x="bingo,我不会让学长学姐失望哒（期待地搓搓手）" ;
+    }
+    else{
+        x="确定考虑清楚了嘛？再想想呗，不亏，回头是岸！！现在回头还来的及，可以重新填写答案1000次，一定能填对的！！"
+    }
+	    document.getElementById("d").innerHTML=x;
+}    
+    </script>
+</body>
+</html>
